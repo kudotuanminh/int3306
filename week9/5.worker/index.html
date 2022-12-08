@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Image Manipulation Worker</title>
+</head>
+
+<body>
+    <div>
+        <label>Chọn tệp ảnh:</label>
+        <input type=file id=imageUpload accept="image/png, image/jpeg, image/gif" />
+    </div>
+    <div>
+        Ảnh gốc:
+        <img style="height: 150px;" class="preview nodisplay" />
+    </div>
+    <div>
+        Ảnh qua biến đổi Sepia:
+        <canvas class="target nodisplay"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

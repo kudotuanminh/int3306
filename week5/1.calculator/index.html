@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class=main-container>
+        <div class=calc-container>
+            <div id=branding> Calculator </div>
+            <div id=input></div>
+            <div id=buttons-container>
+                <div class="btn btn-dark-operator" onclick="clearInput()">C</div>
+                <div class="btn btn-dark-operator" onclick="toggleNegative()">±</div>
+                <div class="btn btn-dark-operator" onclick="togglePercent()">%</div>
+                <div class="btn btn-operator" onclick="insertNum('/')">÷</div>
+
+                <div class="btn btn-num" onclick="insertNum(7)">7</div>
+                <div class="btn btn-num" onclick="insertNum(8)">8</div>
+                <div class="btn btn-num" onclick="insertNum(9)">9</div>
+                <div class="btn btn-operator" onclick="insertNum('*')">x</div>
+
+
+                <div class="btn btn-num" onclick="insertNum(4)">4</div>
+                <div class="btn btn-num" onclick="insertNum(5)">5</div>
+                <div class="btn btn-num" onclick="insertNum(6)">6</div>
+                <div class="btn btn-operator" onclick="insertNum('-')">-</div>
+
+                <div class="btn btn-num" onclick="insertNum(1)">1</div>
+                <div class="btn btn-num" onclick="insertNum(2)">2</div>
+                <div class="btn btn-num" onclick="insertNum(3)">3</div>
+                <div class="btn btn-operator" onclick="insertNum('+')">+</div>
+
+                <div class="btn btn-num zero" onclick="insertNum(0)">0</div>
+                <div class="btn btn-num" onclick="insertNum('.')">.</div>
+                <div class="btn btn-operator" onclick="equalTo()">=</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

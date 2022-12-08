@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        div {
+            margin-top: 5px;
+        }
+
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        table tr,
+        td,
+        th {
+            border: solid 1px #000000;
+            padding: 5px 10px;
+        }
+
+        table th {
+            background-color: #cccccc;
+        }
+
+    </style>
+</head>
+
+<body>
+    <button id=fetchAPI>Fetch API</button>
+
+    <table id=table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Owned Car Brands</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById("fetchAPI").onclick = function () {
+            this.disabled = true;
+            var url = "/data";
+
+            fetch(url).then((response) => {
+                if (response.status == 200) {
+                    response.json().then((data) => {
+                        for (let i = 0; i < data.length; i++) {
+                            let r = document.createElement("tr");
+                            let c1 = document.createElement("td");
+                            let c2 = document.createElement("td");
+                            let c3 = document.createElement("td");
+
+                            c1.innerHTML = data[i].name;
+                            c2.innerHTML = data[i].age;
+                            c3.innerHTML = data[i].cars.length;
+
+                            for (let j = 0; j < data[i].cars.length; j++)
+                                c3.innerHTML +=
+                                    "<br>" +
+                                    data[i].cars[j].name +
+                                    " - " +
+                                    data[i].cars[j].models;
+
+                            r.appendChild(c1);
+                            r.appendChild(c2);
+                            r.appendChild(c3);
+                            document.querySelector("#table tbody").appendChild(r);
+                        }
+                    });
+                }
+            });
+        };
+
+    </script>
+</body>
+
+</html>

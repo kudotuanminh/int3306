@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <table cellpadding="2" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td id=button1 class=mouseSelected onmouseover=mouseOver(this); onmouseout=mouseOut(this);
+                        onclick=mouseSelected(this);>VnExpress</td>
+                    <td id=button2 class=mouseNormal onmouseover=mouseOver(this); onmouseout=mouseOut(this);
+                        onclick=mouseSelected(this);>Dân trí</td>
+                    <td id=button3 class=mouseNormal onmouseover=mouseOver(this); onmouseout=mouseOut(this);
+                        onclick=mouseSelected(this);>Zing News</td>
+                    <td id=button4 class=mouseNormal onmouseover=mouseOver(this); onmouseout=mouseOut(this);
+                        onclick=mouseSelected(this);>Kenh14</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <iframe id=webFrame></iframe>
+    </main>
+</body>
+
+</html>

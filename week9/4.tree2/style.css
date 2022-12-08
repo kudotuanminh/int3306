@@ -1,0 +1,16 @@
+ul.tree li {
+    list-style: none;
+}
+ul.tree li a {
+    text-decoration: none;
+}
+ul.tree li.hasChildren {
+    margin-left: 0px;
+}
+ul.tree li.noChild {
+    margin-left: 18px;
+}
+ul.tree ul {
+    margin-left: 0px;
+    padding-left: 15px;
+}

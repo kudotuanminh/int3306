@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <form id=form>
+        <div class=container>
+            <label class=aligned>Họ tên: </label>
+
+            <input type=name id=name autofocus required />
+
+            <span class=error id=name-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Địa chỉ: </label>
+
+            <input type=address id=address />
+        </div>
+
+        <div class=container>
+            <label class=aligned>Giới tính: </label>
+
+            <input type=radio id=gender-1 name=gender>Nam</input>
+            <input type=radio id=gender-2 name=gender>Nữ</input>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Ngày sinh: </label>
+
+            <input type=text id=birthday placeholder="dd/mm/yyyy" maxlength=10 required />
+
+            <span class=error id=birthday-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>E-mail: </label>
+
+            <input type=email id=email required />
+
+            <span class=error id=email-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Điện thoại: </label>
+
+            <input type=tel id=phone />
+        </div>
+
+        <div class=container>
+            <label class=aligned>Khóa đăng ký: </label>
+
+            <input type=checkbox id=course-1>Tiếng Anh</input>
+            <input type=checkbox id=course-2>Quản trị</input>
+            <input type=checkbox id=course-3>CNTT</input>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Tên sử dụng: </label>
+
+            <input type=text id=username required />
+
+            <span class=error id=username-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Mật khẩu: </label>
+
+            <input type=password id=password required />
+
+            <span class=error id=password-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Gõ lại mật khẩu: </label>
+
+            <input type=password id=password2 required />
+
+            <span class=error id=password2-error></span>
+        </div>
+
+        <div class=container>
+            <label class=aligned>Ghi chú: </label>
+
+            <textarea id=note></textarea>
+        </div>
+
+        <div class=container>
+            <label class=aligned>&nbsp;</label>
+
+            <img class=preview src="images/placeholder.jpg" />
+        </div>
+
+        <div class=container>
+            <label class=aligned>Ảnh chân dung: </label>
+
+            <input type=file id=avatar accept="image/png, image/jpeg, image/gif" />
+        </div>
+
+        <div class=container>
+            <label class=aligned>&nbsp;</label>
+
+            <input type=button id=submit onclick="javascript:submitForm()" value="Chấp nhận" />
+            <input type=button id=reset onclick="javascript:location.reload();" value="Bỏ qua" />
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

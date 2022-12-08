@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+div {
+    margin-top: 5px;
+}
+
+.container {
+    text-align: left;
+    margin-bottom: 5px;
+}
+.container label.aligned {
+    float: left;
+    width: 120px;
+}
+
+.container span.error {
+    color: #ff0000;
+}
+
+.container input[type=text],
+.container input[type=name],
+.container input[type=address],
+.container input[type=email],
+.container input[type=tel],
+.container input[type=password],
+.container textarea {
+    padding: 5px;
+    border: 1px solid grey;
+    width: 250px;
+    background-color: #f1f1f1;
+}
+.container input[type=text]:hover,
+.container input[type=name]:hover,
+.container input[type=address]:hover,
+.container input[type=email]:hover,
+.container input[type=tel]:hover,
+.container input[type=password]:hover,
+.container textarea:hover {
+    background: #e1e1e1;
+}
+
+.container input[required] {
+    background-color: #00ffff;
+}
+.container input[required]:hover {
+    background-color: #00dddd;
+}
+
+.container img {
+    height: 150px;
+}
+
+.container input[type=button] {
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container input[type=button]:hover {
+    background: #0b7dda;
+}

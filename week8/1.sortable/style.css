@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+div {
+    margin-top: 5px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+table tr, td, th {
+    padding: 5px 10px;
+}
+
+table.sortable {
+    border-collapse: collapse;
+}
+table.sortable td {
+    border: solid 1px #000000;
+}
+table.sortable th {
+    border: solid 1px #000000;
+    background-color: #cccccc;
+}
+table.sortable th.sortableCol {
+    cursor: pointer;
+}
+table.sortable th.sortableCol span.arrow::after {
+    content: "\2195";
+}
+table.sortable th.asc span.arrow::after {
+    content: "\2191";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+table.sortable th.desc span.arrow::after {
+    content: "\2193";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}

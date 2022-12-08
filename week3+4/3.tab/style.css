@@ -1,0 +1,31 @@
+#webFrame{
+    width: 99.5%;
+    height: calc(100vh - 53px);
+}
+td{
+    padding: 5px;
+    user-select: none;
+}
+
+.mouseNormal {
+    background-color: #cccccc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+}
+.mouseSelected {
+    background-color: #00ffff;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+}
+.mouseHover {
+    background-color: #fcfcfc;
+    border-left: solid 1px #dcdcdc;
+    border-right: solid 1px #dcdcdc;
+    border-top: solid 1px #dddddd;
+    border-bottom: solid 0px #dddddd;
+    cursor:pointer;
+}

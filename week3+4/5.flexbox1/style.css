@@ -1,0 +1,58 @@
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+header {
+    background: purple;
+    height: 100px;
+}
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+a {
+    text-decoration: none;
+}
+div.acknowledgement {
+    color: #999;
+    font-size: x-small;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+/* Responsive layout with flexboxes */
+/* Larger viewports */
+section,
+div {
+    display: flex;
+}
+div,
+article {
+    flex: 1;
+}
+article:nth-of-type(2) {
+    flex: 2;
+}
+/* Medium-sized */
+@media (max-width: 767px) {
+    section {
+        display: block;
+    }
+}
+/* Small */
+@media (max-width: 600px) {
+    div {
+        display: block;
+    }
+}

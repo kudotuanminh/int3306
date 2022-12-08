@@ -1,0 +1,15 @@
+{
+    "name": "2.api",
+    "version": "0.0.1",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "~4.16.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}

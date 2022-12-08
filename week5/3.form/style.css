@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: #05c46b;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+form {
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background-color: #05c46b;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container input,
+.container select,
+.container textarea {
+    display: block;
+    border: 1px solid #777;
+    border-radius: 2px;
+    padding: 10px;
+    width: 95%;
+}
+
+.container input[type=radio],
+.container input[type=checkbox] {
+    display: inline-block;
+    width: auto;
+}

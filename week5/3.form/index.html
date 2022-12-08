@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <div class=container>
+            <label>Name</label>
+            <input type=text id=name placeholder="Enter your name" />
+        </div>
+
+        <div class=container>
+            <label>Email</label>
+            <input type=email id=email placeholder="Enter your email" />
+        </div>
+
+        <div class=container>
+            <label>Age</label>
+            <input type=text id=age placeholder="Enter your age" />
+        </div>
+
+        <div class=container>
+            <label>Which option best describes you?</label>
+
+            <select id=role>
+                <option value=student>Student</option>
+                <option value=intern>Intern</option>
+                <option value=professional>Professional</option>
+                <option value=other>Other</option>
+            </select>
+        </div>
+
+        <div class=container>
+            <label>Would you recommend GeeksforGeeks to a friend?</label>
+
+            <label>
+                <input type=radio id=recommend-1 name=recommend>Yes</input>
+            </label>
+            <label>
+                <input type=radio id=recommend-2 name=recommend>No</input>
+            </label>
+            <label>
+                <input type=radio id=recommend-3 name=recommend>Maybe</input>
+            </label>
+        </div>
+
+        <div class=container>
+            <label>Languages and Frameworks known <small>(Check all that apply)</small> </label>
+
+            <label>
+                <input type=checkbox id=checkbox-1>C</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-2>C++</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-3>C#</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-4>Java</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-5>Python</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-6>JavaScript</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-7>React</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-8>Angular</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-9>Django</input>
+            </label>
+            <label>
+                <input type=checkbox id=checkbox-10>Spring</input>
+            </label>
+        </div>
+
+        <div class=container>
+            <label>Any comments or suggestions</label>
+
+            <textarea id=comment placeholder="Enter your comment here"></textarea>
+        </div>
+
+        <button class=button>Submit</button>
+    </form>
+</body>
+
+</html>

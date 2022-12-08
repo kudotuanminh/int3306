@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Animation</title>
+</head>
+
+<body>
+    <div>
+        <button onclick="javascript:startJumping();">Start</button>
+        <button onclick="javascript:clearInterval(jumping);">Stop</button>
+    </div>
+    <div style="padding-top: 50px;">
+        <img src="images/jump0.gif" name=Jack>
+    </div>
+
+    <script>
+        var animation = new Array(4);
+
+        let curPos = 0;
+        let jumping;
+        let direction = "UP";
+
+        for (let i = 0; i < animation.length; i++) {
+            animation[i] = new Image();
+            animation[i].src = "images/jump" + i + ".gif";
+        }
+
+        function jump() {
+            if (direction == "UP") {
+                if (curPos == 3) {
+                    curPos--;
+                    direction = "DOWN";
+                }
+                else
+                    curPos++;
+            }
+            else {
+                if (curPos == 0) {
+                    curPos++;
+                    direction = "UP";
+                }
+                else
+                    curPos--;
+            }
+            document.Jack.src = animation[curPos].src;
+        }
+
+        function startJumping() {
+            if (jumping)
+                clearInterval(jumping);
+            jumping = setInterval(jump, 150);
+        }
+    </script>
+</body>
+
+</html>
